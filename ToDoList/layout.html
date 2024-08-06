@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-App</title>
+    <link rel="stylesheet" href="Styles\styles.css">
+    <link rel="stylesheet" href="Styles\popup.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <!--
+        1. View all projects.
+        2. View all todos in each project (probably just the title and duedate… perhaps changing color for different priorities).
+        3. Expand a single todo to see/edit its details.
+        4. Delete a todo.
+    -->
+    <div class="contents">
+        <div class="header">
+            <h1>To-Do-List</h1>
+        </div>
+        <div class = "filters">
+            <h4>Priorities:</h4>
+            <ul>
+                <li class="filter"><button>First</button></li>
+                <li class="filter"><button>Second</button></li>
+                <li class="filter"><button>Third</button></li>
+                <li class="filter"><button>Fourth</button></li>
+                <li class="filter"><button>Fifth</button></li>
+            </ul>
+        </div>
+        <div class = "config">
+            <ul>
+                <li class="AddButton"><button>+</button></li>
+                <li class="RemoveButton"><button>-</button></li>
+            </ul>
+        </div>
+        <div class = "project-list">
+            <ul id = "projects">
+    
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>

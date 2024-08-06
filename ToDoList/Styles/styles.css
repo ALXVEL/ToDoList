@@ -1,0 +1,73 @@
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header, .filters, .config, .project-list{
+    border: 1px black solid;
+}
+
+.contents {
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+    grid-template-columns: repeat(3,1fr);
+}
+
+/* HEADER */
+
+.header{
+    grid-column: 1/4;
+}
+
+.header h1{
+    margin: 0;
+}
+
+/* FILTERS */
+
+.filters{
+    grid-row: 2;
+    grid-column: 1/3;
+    display: flex;
+    align-items: center;
+
+}
+
+.filters h4 {
+    margin-right: 10px;
+    margin-top: 0;
+}
+
+.filters ul {
+    list-style-type: none;
+    display: flex;
+    margin-top: 0;
+    overflow: hidden;
+
+}
+
+.filters ul li {
+    margin-right: 10px;
+}
+
+/*CONFIGURATION*/
+
+.config{
+    grid-column: 3;
+    grid-row: 2/3;
+}
+
+.config ul{
+    list-style-type: none;
+}
+
+/*PROJECT - LIST*/
+
+.project-list{
+    grid-row: 3;
+}
+
